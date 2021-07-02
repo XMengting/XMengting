@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TNT的新闻</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous"><!-- 导入bootstrap v5的CSS 文件去除integrity部分 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script><!-- 导入bootstrap v5的js文件集成包去除integrity部分 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style type="text/css">
+    html{height:100%} 
+body{height:100%;margin:0px;padding:0px} 
+#container{height: 400px;
+
+}
+.map{
+width: 100%px;
+margin: 0 auto;
+height: 400px;
+
+} 
+a{
+            text-decoration: none;
+            color: black;
+        }
+     
+          
+
+html{height:100%} 
+body{height:100%;margin:0px;padding:0px} 
+#container{height: 400px;
+
+}
+.map{
+width: 100%px;
+margin: 0 auto;
+height: 400px;
+
+} 
+a{
+            text-decoration: none;
+            color: black;
+        }
+     
+          
+</style> 
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=kSMwxZQHg7gmYh9a8R6eoR0xa1TGjtjp">
+</script>
+</head>
+<body>
+    <!--导航-->
+    <header class="p-3 text-white" style="background-color:#9FBCC2">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <span style="font-size: 30px;color: white;"><strong>TNT时代少年团&nbsp;&nbsp;</strong> </span>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="text-align: center;">
+              
+            
+            </ul>
+    
+            <div class="text-end">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="text-align: center;">
+              
+                  <li><a href="首页1.html" class="nav-link px-2" style="color: whitesmoke;">首页</a></li>
+                  <li><a href="团队成员.html" class="nav-link px-2" style="color: whitesmoke;">成员介绍</a></li>
+                  <li><a href="商品页.html" class="nav-link px-2" style="color: whitesmoke;">周边商场</a></li>
+                  <li><a href="关于我们.html" class="nav-link px-2" style="color: whitesmoke;">关于我们</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--轮播图-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+       
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="tnt.jpg" class="d-block w-100" alt="..." width="800px" height="500px">
+            </div>        
+        </div>
+      </div>
+      <div class="a1" style="background-color: #9FBCC2;height: 5px;"></div>
+
+<!---->
+
+<div class="row row-cols-12" >
+    <div class="col" style="background-color: #9FBCC2;">
+    
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb" style="margin-left: 20px;margin-top: 5px;">
+        <li class="breadcrumb-item"><a href="#"style="color:black;">首页</a></li>
+  
+      <li class="breadcrumb-item active" aria-current="page" style="color: whitesmoke;">TNT的专辑</li>
+    </ol>
+  </nav>
+    </div>
+    </div>
+    <div class="a1" style="background-color: white;height: 5px;"></div>
+ 
+<!--专辑舞台-->
+
+
+
+         <!--FOOT-->
+         <div class="row row-cols-12">
+            <div class="col" style="background-color: #9FBCC2;">
+            <div class="a2" style="height: 25px;margin-top: 5px;">
+            <p style="text-align: center;color: whitesmoke;"><strong>ABOUT US</strong> </p></div></div>
+            </div>
+       
+            <div class="row row-cols-12">
+              <div class="col" style="background-color: whitesmoke; " >
+            <h5 class="card-title" style="text-align: center;margin-top: 10px;">
+              <strong>时代峰峻</strong></h5>
+            <p class="card-text"style="text-align: center; font-size:15px; margin-bottom:10px">
+              北京时代峰峻文化艺术发展有限公司（Time Fengjun Entertainment）成立于2009年。<br>
+              公司本部设立在北京，是一家集组织大型文艺演出、艺人培训、艺人经纪为一体的专业文化娱乐传播机构<br>
+              也是率先采用练习生养成模式进行明星培养的国内经纪娱乐公司。<br>
+              公司从成立之初就开始招募练习生，并着手打造艺人品牌TF家族，现公司旗下所属艺人中拥有当红组合TFBOYS、时代少年团。
+            </p>
+            </div>
+          </div>
+  
+          <div class="row row-cols-12">
+            <div class="col" style="background-color: #9FBCC2;">
+            <div class="a2" style="height: 250px;">
+              <div class="row row-cols-1 row-cols-2 row-cols-3 row-cols-4" style="margin-left: 50px;margin-right: 50px;">
+                <div class="col">
+                 
+                  <div class="card" style=" margin-top: 30px;">
+                    <img src="43.jpg" class="card-img" alt="...">
+                  </div>
+                  <p style="margin-top: 10px;font-size: 13px;text-align: center;">重庆市南岸区南滨路<br>22号长江国际18楼</p>
+              </div>
+    
+              <div class="col">
+                 
+                <div class="card" style=" margin-top: 30px;">
+                  <img src="43.jpg" class="card-img" alt="..." >
+                </div>
+                <p style="margin-top: 10px;font-size: 13px;text-align: center;">tfenf@.cn</p>
+            </div>
+    
+            <div class="col">
+                 
+              <div class="card" style=" margin-top: 30px;">
+                <img src="43.jpg" class="card-img" alt="...">
+              </div>
+              <p style="margin-top: 10px;font-size: 13px;text-align: center;">110-110-1110</p>
+          </div>
+    
+          <div class="col">
+             
+            <div class="card" style=" margin-top: 30px;">
+              <img src="43.jpg" class="card-img" alt="...">
+            </div>
+            <p style="margin-top: 10px;font-size: 13px;text-align: center;">扫一扫加入TNT俱乐部</p>
+  
+        </div>
+                </div>
+            </div>
+            <div class="row row-cols-12">
+              <div class="col" style="background-color: #9FBCC2;">
+              <div class="a2" style="height: 20px;">
+              <p style="text-align: center;color: whitesmoke;font-size: 10px;"><strong>版权所有@TNT俱乐部</strong> </p></div></div>
+              </div>
+
+
+  </body>
+  <!--  -->
+ 
+</html>
