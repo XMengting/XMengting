@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>个人展示</title>
+  <!-- bootstrap的样式 -->
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script><!-- 导航的 -->
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script><!-- 导航的 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"><!-- bootstrap的样式 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+<!--  -->
+<link rel="shortcut icon" href="../loey2.ico">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="../css/comment.css">
+
+<!--  -->
+  <style>
+
+    /*导航栏*/
+
+    /*中部*/
+    .main li{
+          list-style: none;
+        }
+        .main img{
+
+         width: 100%;
+          height: 300px;
+        }
+
+ /*尾部*/
+ .f1 li {
+ 
+ list-style: none;
+}
+
+.f1 li img {
+ height: 200px;
+ width: 100%;
+}
+
+h4 {
+text-align: center;
+}
+    .card3{
+  margin-top: 30px;
+}
+    /**/
+.ss{
+  font-size: 30px;
+}
+
+  </style>
+</head>
+
+<body>
+ <!--3导航-->
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+      <a class="navbar-brand" href="#"> <img data-src="年代/dm.png" src='年代/8.jpg' class="lazyload" alt=""style="width: 100px; height: 90px; float: left;"></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active ss" aria-current="page" href="首页.html"style="color: black;float: left;margin-top: 27px;font-size：30px">首页 &nbsp;</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link ss" href="新闻.html"style="color: black;float: left;margin-top: 27px;font-size：30px">新闻 &nbsp;</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link ss" href="个人展示.html"style="color: black;float: left;margin-top: 27px;font-size：30px">个人展示 &nbsp;</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link ss" href="关于我们.html"style="color: black;float: left;margin-top: 27px;font-size：30px">关于我们 &nbsp;</a>
+              </li>
+
+          </ul>
+      </div>
+  </div>
+</nav>
+  <!-- 中部 -->
+
+ <div class="main container">
+   <div style="margin-left: -30px;">
+  <h2 style="text-align: center;">喜欢的电影</h2>
+          <ul class="row">
+              <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="年代/35.jpg">
+                      <img data-src="年代/35.jpg" src='年代/30.jpg' class="lazyload" alt="">
+                    </a>
+                      <h4>唐人街探案</h4>              
+              </li>
+              <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <a href="年代/38.jpg">
+                  <img data-src="年代/38.jpg" src='年代/30.jpg' class="lazyload" alt="">
+                </a>
+                      <h4>暮光之城</h4>
+              </li>
+              <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <a href="年代/41.png">
+                  <img data-src="年代/41.png" src='年代/30.jpg' class="lazyload" alt="">
+                </a>
+                      <h4>福尔摩斯</h4>
+              </li>
+              <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <a href="年代/b1.jpg">
+                  <img data-src="年代/b1.jpg" src='年代/30.jpg' class="lazyload" alt="">
+                </a>
+                      <h4>海贼王</h4>
+              </li>      
+          </ul>
+          <!-- 喜欢的书 -->
+          <h2 style="text-align: center;">喜欢的书</h2>
+          
+          <ul class="row">
+
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="年代/2.jpg">
+                <img data-src="年代/2.jpg" src='年代/8.jpg' class="lazyload" alt="">
+              </a>
+                <h4>月亮与六便士</h4>              
+        </li>
+
+              <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="年代/9.jpg">
+                <img data-src="年代/9.jpg" src='年代/8.jpg' class="lazyload" alt="">
+              </a >
+                <h4>明朝那些事</h4>              
+        </li>
+
+              <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <a href="年代/10.jpg">
+                <img data-src="年代/10.jpg" src='年代/8.jpg' class="lazyload" alt="">
+              </a>
+                <h4>茶花女</h4>              
+        </li>
+        <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="年代/20.jpg">
+            <img data-src="年代/20.jpg" src='年代/8.jpg' class="lazyload" alt="">
+          </a>
+            <h4>黄金时代</h4>              
+    </li>
+          </ul>
+      </div>
+    </div>
+  </div><!-- container -->
+
+  <!-- 尾部 -->
+  <div style="background-color: rgb(214, 214, 214);width: 100%;">
+    <div class="container">
+      <div class="footer"style="margin-left: -30px;">
+        <div class="f1">
+          <ul class="row">
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/地图.png" />
+                <h4 style="margin-top: 10px;">福建福州市闽侯县大学城</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/邮 箱.png" />
+                <h4 style="margin-top: 10px;">2583762797@qq.com</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/客服.png" />
+                <h4 style="margin-top: 10px;">400-123-4567</h4>
+              </div>
+            </li>
+            <li class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card3">
+                <img src="年代/9.png" />
+                <h4 style="margin-top: 10px;">扫一扫加入觉醒年代</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="width: 300px;margin: 0 auto;">
+          <hr style="margin-top: 50px;width:300px;"><br>
+          <h4 style="margin-left: 30px;">版权所有@觉醒年代</h4>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+</html>
