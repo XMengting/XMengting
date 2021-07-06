@@ -58,23 +58,23 @@
   </nav>
       <!--轮播图-->
       
-
-      <div class="container text-center" style="margin-bottom: 50px;">
-        <div class="row row-cols-12 gx-4 text-center news">
-            <div class="col text-center ">
-                <img width="400px" height="500px" src="img/goods1.jpg" alt="" style="margin-bottom: 50px;">
-                <div class="col text-center text-center ">
-                    <h3 class="mb-0">Post title</h3>
-                </div>
-                <div class="col text-center ">
-                    <p>价格：</p >
-                </div>
-                <div class="col text-center " >
-                    <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+      <div id='newsdetail' class="container text-center" style="margin-bottom: 50px;">
+        
+      </div>
+        <script>
+            var i = window.location.search.split('=')[1];
+            console.log(i, "id")
+            axios.get(`https://www.fastmock.site/mock/bd3810a89ad53e7eab9b86c2284d766c/text/api?id=${i}`).then(function (res) {
+                console.log(res.data.data.list);
+                let obj = res.data.data.list
+                var newsdetail = $('#newsdetail');
+                newsdetail.append(`<h3 style="text-align:center;">${obj.title}</h3>`);
+                newsdetail.append(`<p style="color:darkgrey; font-size: 15px; text-align:center;">${obj.time}</p>`);
+                newsdetail.append(`<img style="height:500px; " src="${obj.img}" alt="">`);
+                newsdetail.append(`<p style="font-size: 13px;text-align:center;">${obj.content}</p>`);
+            })
+        </script>
+     
 
     
 
@@ -145,66 +145,7 @@
 
 
             <script>
-              page();
-      
-              function page() {
-                  $('.news').empty();
-                  // console.log(res.data);
-                  var request = new Object();
-                  request = GetRequest();
-                  var id = request['id'];
-                  var page = request['page'];
-                  axios.get(`https://www.fastmock.site/mock/bd3810a89ad53e7eab9b86c2284d766c/text/xmt1?page=${page}`).then(function(res) {
-                      for (let i = 0; i < 9; i++) {
-                          if (id == res.data.data.list[i].id) {
-                              let div1 = $('<div class="col"></div>');
-                              let div2 = $('<div class="col"></div>');
-                              let div3 = $('<div class="col"></div>');
-                              let div4 = $('<div class="col"></div>');
-      
-                              div1.append(`<img width="400px" height="500px" src="${res.data.data.list[i].img}" alt="" style="margin: 50px 0px;">`);
-                              div1.append(div2);
-                              div1.append(div3);
-                              div1.append(div4);
-                              div2.append(`<h3 class="mb-0">${res.data.data.list[i].title}</h3>`);
-                              div3.append(`<p>价格：${res.data.data.list[i].time}</p>`);
-                              div4.append(`<p class="card-text">${res.data.data.list[i].content}</p>`);
-                              $('.news').append(div1);
-                              break;
-                          }
-                      }
-                  })
-              }
-      
-              function GetRequest() {
-                  var url = location.search; //获取url中"?"符后的字串
-                  var theRequest = new Object();
-                  if (url.indexOf("?") != -1) {
-                      var str = url.substr(1);
-                      // alert(str);
-                      strs = str.split("&");
-                      for (var i = 0; i < strs.length; i++) {
-                          theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
-                      }
-                  }
-                  return theRequest;
-              }
-      
-              $(function() {
-                  $(window).scroll(function() {
-                      if ($(this).scrollTop() != 0) {
-                          $("#toTop").fadeIn();
-                      } else {
-                          $("#toTop").fadeOut();
-                      }
-                  });
-                  $("body").append("<div id=\"toTop\" style=\"border:1px solid #444;background:#333;color:#fff;text-align:center;padding:6px 10px 0px 10px;position:fixed;bottom:30px;right:30px;cursor:pointer;display:none;font-family:verdana;font-size:22px;\">^</div>");
-                  $("#toTop").click(function() {
-                      $("body,html").animate({
-                          scrollTop: 0
-                      }, 10);
-                  });
-              })
+            
           </script>
 </body>
 </html>
